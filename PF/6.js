@@ -63,7 +63,7 @@ document.getElementById('login-btn').addEventListener('click', function () {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
   if (username && password) {
-    window.location.href = 'https://525ssss.github.io/441/PF/1.html';
+    window.location.href = 'https://525ssss.github.io/441/PF/index1.html';
   } else {
     alert('Invalid username or password');
   }
