@@ -234,7 +234,7 @@ function junpFun() {
   } else {
     alert('Not logged in yet, please log in first');
     setTimeout(() => {
-      window.location.href = '1.html';
+      window.location.href = 'index1.html';
     }, 500);
   }
 }
