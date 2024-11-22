@@ -1,0 +1,368 @@
+/*Curry Shen Chenlingjun*/
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header and footer styles */
+header {
+  background-color: #9dff00;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+}
+
+footer {  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9dff00; 
+  color: #fbf9f9; 
+  text-align: center; 
+  padding: 10px 0; 
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2); 
+}
+
+/* Logo container styles */
+.logo-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px 0; 
+}
+
+.logo-container img {
+  width: 100px; 
+  height: 100px; 
+}
+
+/* Container and shopping cart styles */
+.container, .shopping-cart {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Course styles */
+.course {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #eee;
+}
+
+.course h3, .course p {
+  margin: 0;
+  color: #333;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e74c3c; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c0392b; 
+}
+
+.button.Clear {
+  background-color: #2ecc71; 
+}
+
+.button.Clear:hover {
+  background-color: #27ae60; 
+}
+
+/* Cart table styles */
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#cart-table td, #cart-table th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#cart-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Total styles */
+.total {
+  text-align: right;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container, .shopping-cart, .course, .button {
+    padding: 10px;
+  }
+
+  .button {
+    padding: 8px 12px;
+  }
+}
+
+/* Form styles */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.error {
+  color: rgb(42, 9, 88);
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #b8965c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ae4c94;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+/* Section styles */
+section {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2, section p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Team member styles */
+.team-member {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-right: 10px;
+  max-width: 100px;
+  height: auto;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #34495e;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #2c3e50;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  clear: both;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f39c12;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Course card styles */
+.course-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+/* Shopping cart styles */
+.shopping-cart {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Quantity input styles */
+.quantity-input {
+  padding: 10px;
+  margin-right: 10px;
+  width: calc(100% - 132px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+
+  .quantity-input {
+    width: calc(100% - 112px);
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
+
+/* Row and column styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Entrance text styles */
+.entrance-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Additional media query for larger screens */
+@media (min-width: 769px) and (max-width: 992px) {
+  .col {
+    flex: 0 0 32%; /* Adjusted width for larger screens */
+    max-width: 32%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
